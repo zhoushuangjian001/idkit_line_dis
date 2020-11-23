@@ -1,13 +1,4 @@
-import 'package:flutter/material.dart'
-    show
-        CustomPainter,
-        Color,
-        Canvas,
-        Size,
-        Paint,
-        PaintingStyle,
-        StrokeJoin,
-        Offset;
+part of idkit_line;
 
 class IDKitRegularLine extends CustomPainter {
   const IDKitRegularLine({
@@ -60,9 +51,4 @@ class IDKitRegularLine extends CustomPainter {
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
     return false;
   }
-}
-
-enum Direction {
-  horizontal,
-  vertical,
 }

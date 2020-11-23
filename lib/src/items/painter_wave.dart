@@ -1,20 +1,10 @@
-import 'dart:math' show sin;
-import 'package:flutter/material.dart'
-    show
-        CustomPainter,
-        Color,
-        Canvas,
-        Size,
-        Paint,
-        PaintingStyle,
-        StrokeJoin,
-        Path;
+part of idkit_line;
 
 class IDKitWaveLine extends CustomPainter {
   const IDKitWaveLine({
     this.color,
     this.paintWidth = 1,
-    this.direction = Direction.vertical,
+    this.direction = Direction.horizontal,
     this.peak = 6,
   });
 
@@ -67,9 +57,4 @@ class IDKitWaveLine extends CustomPainter {
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
     return false;
   }
-}
-
-enum Direction {
-  horizontal,
-  vertical,
 }
