@@ -47,7 +47,6 @@ class IDKitLinedot extends CustomPainter {
     final _intervalAll =
         _size - (_count + 1) * itemLength - paintWidth * _count;
     final _interval = _intervalAll / (_count * 2);
-    print(_interval);
     // Save canvas.
     canvas.save();
     // Set paint.
